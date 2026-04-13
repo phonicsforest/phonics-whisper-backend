@@ -4,7 +4,7 @@ import tempfile
 
 app = Flask(__name__)
 
-model = whisper.load_model("base")   # ⭐ 只 load 一次（關鍵！）
+model = whisper.load_model("tiny")
 
 @app.route("/transcribe_sentence", methods=["POST"])
 def transcribe():
